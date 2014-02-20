@@ -1,0 +1,13 @@
+>|sh|
+
+# 全ファイルを一度無視
+/*
+
+# さらにdotfileを無視
+/.*
+
+# 無視したくないファイルを![filename]で指定
+#!/.bash_profile
+#!/.bashrc
+!/.vimrc
+!/.gitignore
