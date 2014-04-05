@@ -49,7 +49,7 @@ set ttyfast
 set wrap
 
 " Encoding -------------------------
-set fileencodings=iso-2022-jp,utf-8,cp932
+set fileencodings=utf-8,iso-2022-jp,cp932
 
 " File -----------------------------
 set autoread                        " 更新時に自動再読み込み
