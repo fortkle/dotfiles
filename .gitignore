@@ -1,12 +1,11 @@
 >|sh|
-
-# $BA4%U%!%$%k$r0lEYL5;k(B
+# 全ファイルを一度無視
 /*
 
-# $B$5$i$K(Bdotfile$B$rL5;k(B
+# dotfileも無視 
 /.*
 
-# $BL5;k$7$?$/$J$$%U%!%$%k$r(B![filename]$B$G;XDj(B
+# 無視したくないファイルを![filename]で指定
 #!/.bash_profile
 #!/.bashrc
 !/.vimrc
