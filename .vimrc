@@ -90,7 +90,7 @@ set showcmd							" 入力中のコマンドを表示
 set showmode                        " 現在のモードを表示
 set number							" 行番号表示
 set nowrap							" 画面幅で折り返さない
-"set cursorline                      " カーソル行をハイライト
+set cursorline                      " カーソル行をハイライト
 set title                           " 編集中のファイル名を表示
 set showmode                        " モードを表示する
 
