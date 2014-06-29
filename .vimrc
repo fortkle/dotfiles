@@ -17,10 +17,10 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'soramugi/auto-ctags.vim'
 
 " Bundle Settings ------------------------
 " NERDTree
