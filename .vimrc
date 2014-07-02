@@ -24,6 +24,8 @@ NeoBundle 'tomasr/molokai'
 " Bundle Settings ------------------------
 " NERDTree
 nnoremap <silent> <C-e> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeHijackNetrw = 0
 
 " unite
 nnoremap <silent> <space>fm :<C-u>Unite file_mru<CR>
