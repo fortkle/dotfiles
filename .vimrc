@@ -1,8 +1,8 @@
 " NeoBundle ------------------------------
-" mkdir -p ~/.vim/bundle↲
+" mkdir -p ~/.vim/bundle
 " git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim↲
-" cd ~/.vim/bundle/vimproc/
-" make -f make_***.mak"
+" cd ~/.vim/bundle/vimproc.vim/
+" make"
 
 let g:neobundle_default_git_protocol='git'
 if has('vim_starting')
@@ -18,19 +18,23 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tomasr/molokai'
-NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 " Bundle Settings ------------------------
 " NERDTree
 nnoremap <silent> <C-e> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeHijackNetrw = 0
 
 " unite
-nnoremap <silent> <space>fm :<C-u>Unite file_mru<CR>
-nnoremap <silent> <space>fr :<C-u>Unite register<CR>
-nnoremap <silent> <space>fs :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-nnoremap <silent> <space>ss :<C-u>UniteResume search-buffer<CR>
+let g:unite_enable_start_insert = 1
+let g:unite_enable_ignore_case = 1
+let g:unite_enable_smart_case = 1
+nnoremap <silent> <space>f :<C-u>Unite file_mru<CR>
+nnoremap <silent> <space>g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> <space>gw :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+nnoremap <silent> <space>gg :<C-u>UniteResume search-buffer<CR>
 
 if executable('ag')
    let g:unite_source_grep_command = 'ag'
@@ -38,13 +42,18 @@ if executable('ag')
    let g:unite_source_grep_recursive_opt = ''
 endif
 
+" auto-ctags
+let g:auto_ctags = 1
+let g:auto_ctags_directory_list = ['.git', '.svn']
+
 " Vim Settings ---------------------------
 " Basic
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme molokai
-set fileencodings=iso-2022-jp,utf-8,cp932
+colorscheme Tomorrow-Night-Bright
+"set fileencodings=iso-2022-jp,utf-8,cp932
+set fileencodings=utf-8,iso-2022-jp,cp932
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,
 set lazyredraw
