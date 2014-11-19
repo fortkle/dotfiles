@@ -11,3 +11,4 @@
 !/.vimrc
 !/.tmux.conf
 !/.gitignore
+!/setup.sh
