@@ -11,8 +11,7 @@ if has('vim_starting')
     filetype indent off
     execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
-call neobundle#rc(expand('~/.vim/bundle'))
-
+call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
@@ -20,6 +19,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+call neobundle#end()
 
 " Bundle Settings ------------------------
 " NERDTree
