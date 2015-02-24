@@ -52,3 +52,7 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 # tmuxのインストール
 sudo yum install tmux -y
 ln -s .dotfiles/.tmux.conf
+
+# zshのインストール
+sudo yum install zsh -y
+ln -s .dotfiles/.zshrc
