@@ -6,8 +6,9 @@
 /.*
 
 # 無視したくないファイルを![filename]で指定
-#!/.bash_profile
-#!/.bashrc
+!/.bash_profile
+!/.bashrc
+!/.zshrc
 !/.vimrc
 !/.tmux.conf
 !/.gitignore

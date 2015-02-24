@@ -18,6 +18,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 call neobundle#end()
 
@@ -41,10 +42,6 @@ if executable('ag')
    let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
    let g:unite_source_grep_recursive_opt = ''
 endif
-
-" auto-ctags
-let g:auto_ctags = 1
-let g:auto_ctags_directory_list = ['.git', '.svn']
 
 " Vim Settings ---------------------------
 " Basic
@@ -83,3 +80,4 @@ set number
 set t_Co=256
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
