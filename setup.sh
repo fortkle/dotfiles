@@ -52,3 +52,15 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 # tmuxのインストール
 sudo yum install tmux -y
 ln -s .dotfiles/.tmux.conf
+
+# zshのインストール
+sudo yum install zsh -y
+ln -s .dotfiles/.zshrc
+
+# pecoのインストール
+cd ~/src
+wget https://github.com/peco/peco/releases/download/v0.2.11/peco_linux_amd64.tar.gz --no-check-certificate
+tar -C ~/src -xzf peco_linux_amd64.tar.gz
+cp -rp ~/src/peco_linux_amd64/peco ~/local/bin/
+cd ~/bin
+ln -s ~/local/bin/peco peco
