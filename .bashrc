@@ -9,7 +9,7 @@ fi
 # use tmux
 if [ -z $TMUX ]; then
   if $(tmux has-session); then
-    tmux attach
+    tmux -2 attach
   else
     tmux -2
   fi

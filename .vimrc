@@ -19,6 +19,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 call neobundle#end()
 
@@ -42,6 +43,13 @@ if executable('ag')
    let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
    let g:unite_source_grep_recursive_opt = ''
 endif
+
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=2
+let g:syntastic_php_checkers=['phpcs']
+let g:syntastic_php_phpcs_args='--standard=psr2'
+nnoremap <Esc>s :SyntasticToggleMode<CR>
 
 " Vim Settings ---------------------------
 " Basic
