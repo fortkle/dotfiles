@@ -97,4 +97,3 @@ set number
 set t_Co=256
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
-

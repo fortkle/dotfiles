@@ -1,8 +1,8 @@
 PATH=$HOME/bin:$PATH
 export PATH
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # 日本語が文字化けしないよう文字コードを指定
 export LANG=ja_JP.UTF-8
