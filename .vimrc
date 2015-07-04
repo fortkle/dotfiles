@@ -3,6 +3,9 @@
 " git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim↲
 " cd ~/.vim/bundle/vimproc.vim/
 " make"
+"
+" vim ~/.vim/bundle/PDV--phpDocumentor-for-Vim/plugin/php-doc.vim
+" L77-83 edit.
 
 let g:neobundle_default_git_protocol='git'
 if has('vim_starting')
@@ -20,6 +23,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'PDV--phpDocumentor-for-Vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 call neobundle#end()
 
@@ -50,6 +54,11 @@ let g:syntastic_auto_loc_list=2
 let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args='--standard=psr2'
 nnoremap <Esc>s :SyntasticToggleMode<CR>
+
+" phpDocumentor
+inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-c> :call PhpDocSingle()<CR>
+vnoremap <C-c> :call PhpDocRange()<CR>
 
 " Vim Settings ---------------------------
 " Basic
