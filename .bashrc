@@ -7,6 +7,8 @@ fi
 [ -z "$PS1" ] && return
 
 # use tmux
+PATH=$HOME/bin:$PATH
+export PATH
 if [ -z $TMUX ]; then
   if $(tmux has-session); then
     tmux -2 attach
