@@ -1,6 +1,9 @@
 PATH=$HOME/bin:$PATH
 export PATH
 
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 
