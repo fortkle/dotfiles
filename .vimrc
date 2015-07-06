@@ -1,8 +1,8 @@
 " NeoBundle ------------------------------
 " mkdir -p ~/.vim/bundle
-" git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim↲
+" git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 " cd ~/.vim/bundle/vimproc.vim/
-" make"
+" make
 "
 " vim ~/.vim/bundle/PDV--phpDocumentor-for-Vim/plugin/php-doc.vim
 " L77-83 edit.
