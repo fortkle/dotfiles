@@ -1,11 +1,6 @@
 PATH=$HOME/bin:$PATH
 export PATH
 
-if [ -d $HOME/.anyenv ] ; then
-  export PATH="$HOME/.anyenv/bin:$PATH"
-  eval "$(anyenv init -)"
-fi
-
 # 日本語が文字化けしないよう文字コードを指定
 export LANG=ja_JP.UTF-8
 
