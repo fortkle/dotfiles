@@ -7,7 +7,6 @@
 " vim ~/.vim/bundle/PDV--phpDocumentor-for-Vim/plugin/php-doc.vim
 " L77-83 edit.
 
-let g:neobundle_default_git_protocol='git'
 if has('vim_starting')
     set nocompatible
     filetype plugin off

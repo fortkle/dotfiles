@@ -1,5 +1,9 @@
 PATH=$HOME/bin:$PATH
+#PATH=/usr/local/bin:$HOME/bin:$PATH
 export PATH
+
+# エイリアス
+alias ll='ls -la'
 
 # 日本語が文字化けしないよう文字コードを指定
 export LANG=ja_JP.UTF-8
