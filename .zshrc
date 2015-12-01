@@ -3,7 +3,7 @@ PATH=$HOME/bin:$PATH
 export PATH
 
 # エイリアス
-alias ll='ls -la'
+alias ll='ls -laG'
 
 # 日本語が文字化けしないよう文字コードを指定
 export LANG=ja_JP.UTF-8
