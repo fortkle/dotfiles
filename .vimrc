@@ -24,6 +24,7 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'PDV--phpDocumentor-for-Vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'junegunn/vim-easy-align'
 call neobundle#end()
 
 " Bundle Settings ------------------------
@@ -58,6 +59,9 @@ nnoremap <Esc>s :SyntasticToggleMode<CR>
 inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-c> :call PhpDocSingle()<CR>
 vnoremap <C-c> :call PhpDocRange()<CR>
+
+" vim-easy-align
+vmap <Enter> <Plug>(EasyAlign)
 
 " Vim Settings ---------------------------
 " Basic
