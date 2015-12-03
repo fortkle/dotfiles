@@ -69,7 +69,6 @@ syntax on
 filetype plugin on
 filetype indent on
 colorscheme Tomorrow-Night-Bright
-"set fileencodings=iso-2022-jp,utf-8,cp932
 set fileencodings=utf-8,iso-2022-jp,cp932
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,
