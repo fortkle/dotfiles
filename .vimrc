@@ -14,39 +14,14 @@ if has('vim_starting')
     execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
 call neobundle#begin(expand('~/.vim/bundle'))
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'scrooloose/syntastic.git'
-NeoBundle 'PDV--phpDocumentor-for-Vim'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'junegunn/vim-easy-align'
+  NeoBundle 'Shougo/neobundle.vim'
+  NeoBundle 'ctrlpvim/ctrlp.vim'
+  NeoBundle 'Townk/vim-autoclose'
+  NeoBundle 'scrooloose/syntastic.git'
+  NeoBundle 'PDV--phpDocumentor-for-Vim'
+  NeoBundle 'chriskempson/vim-tomorrow-theme'
+  NeoBundle 'junegunn/vim-easy-align'
 call neobundle#end()
-
-" Bundle Settings ------------------------
-" NERDTree
-nnoremap <silent> <C-e> :NERDTreeToggle<CR>
-let g:NERDTreeShowHidden = 1
-let g:NERDTreeHijackNetrw = 0
-
-" unite
-let g:unite_enable_start_insert = 1
-let g:unite_enable_ignore_case = 1
-let g:unite_enable_smart_case = 1
-nnoremap <silent> <space>f :<C-u>Unite file_mru<CR>
-nnoremap <silent> <space>g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-nnoremap <silent> <space>gw :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
-nnoremap <silent> <space>gg :<C-u>UniteResume search-buffer<CR>
-
-if executable('ag')
-   let g:unite_source_grep_command = 'ag'
-   let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
-   let g:unite_source_grep_recursive_opt = ''
-endif
 
 " Syntastic
 let g:syntastic_enable_signs=1
@@ -68,7 +43,7 @@ vmap <Enter> <Plug>(EasyAlign)
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Bright
 set fileencodings=utf-8,iso-2022-jp,cp932
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,
@@ -76,7 +51,6 @@ set lazyredraw
 set ttyfast
 
 " Generate File
-set viminfo+=n$HOME/.vim/viminfo
 set noswapfile
 set nobackup
 
@@ -87,6 +61,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set expandtab
+autocmd InsertLeave * set nopaste
 
 " Search
 set incsearch
@@ -98,6 +73,6 @@ set showmatch
 set number
 set t_Co=256
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:\ \ ,eol:\ ,trail:-
 set laststatus=2
 set statusline=%f%m%=%l,%c\ %{'['.(&fenc!=''?&fenc:&enc).']\ ['.&fileformat.']'}
