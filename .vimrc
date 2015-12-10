@@ -48,7 +48,7 @@ set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,
 set lazyredraw
 set ttyfast
-vnoremap pp "0p
+vnoremap p "0p
 
 " Generate File
 set noswapfile
