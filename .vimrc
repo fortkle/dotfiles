@@ -31,9 +31,9 @@ let g:syntastic_php_phpcs_args='--standard=psr2'
 nnoremap <Esc>s :SyntasticToggleMode<CR>
 
 " phpDocumentor
-inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-c> :call PhpDocSingle()<CR>
-vnoremap <C-c> :call PhpDocRange()<CR>
+"inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-c> :call PhpDocSingle()<CR>
+"vnoremap <C-c> :call PhpDocRange()<CR>
 
 " vim-easy-align
 vmap <Enter> <Plug>(EasyAlign)
