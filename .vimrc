@@ -50,6 +50,7 @@ set lazyredraw
 set ttyfast
 set nf=""
 vnoremap pp "0p
+set scrolloff=20 " スクロールする時に下が見えるようにする "
 
 " Generate File
 set noswapfile
