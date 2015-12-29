@@ -1,19 +1,24 @@
-" NeoBundle ------------------------------
-" mkdir -p ~/.vim/bundle
-" git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-" cd ~/.vim/bundle/vimproc.vim/
-" make
-"
-" vim ~/.vim/bundle/PDV--phpDocumentor-for-Vim/plugin/php-doc.vim
-" L77-83 edit.
+set encoding=utf-8
+scriptencoding utf-8
 
+filetype off
+filetype plugin indent off
+
+augroup vimrc "autocmdのgroupを定義
+  autocmd InsertLeave * set nopaste "Insertモードから抜けた際に:set nopasteを実行
+augroup END
+
+"-------------------------------------------------------------------------------
+" Plugin
+"-------------------------------------------------------------------------------
 if has('vim_starting')
+  if &compatible
     set nocompatible
-    filetype plugin off
-    filetype indent off
-    execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim/ "neobundleの読み込み
 endif
-call neobundle#begin(expand('~/.vim/bundle'))
+
+call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'Shougo/neobundle.vim'
   NeoBundle 'ctrlpvim/ctrlp.vim'
   NeoBundle 'Townk/vim-autoclose'
@@ -22,7 +27,11 @@ call neobundle#begin(expand('~/.vim/bundle'))
   NeoBundle 'chriskempson/vim-tomorrow-theme'
   NeoBundle 'junegunn/vim-easy-align'
 call neobundle#end()
+filetype plugin indent on "neobundleの読み込み後に実行
 
+"-------------------------------------------------------------------------------
+" Plugin Settings
+"-------------------------------------------------------------------------------
 " Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
@@ -38,11 +47,11 @@ vnoremap <C-c> :call PhpDocRange()<CR>
 " vim-easy-align
 vmap <Enter> <Plug>(EasyAlign)
 
-" Vim Settings ---------------------------
+"-------------------------------------------------------------------------------"
+" Basic Settings
+"-------------------------------------------------------------------------------"
 " Basic
 syntax on
-filetype plugin on
-filetype indent on
 set fileencodings=utf-8,iso-2022-jp,cp932
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,
