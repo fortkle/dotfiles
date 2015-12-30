@@ -55,7 +55,7 @@ set list                            " 不可視文字を表示する
 set listchars=tab:»-,eol:\ ,trail:- " 不可視文字の表示設定
 set display=lastline                " テキスト表示の方法を変える(長いテキストを省略せず最後まで表示する)
 set laststatus=2                    " 最下ウィンドウにステータス行を常に表示する
-set statusline=%f%m%=%l,%c\ %{'['.(&fenc!=''?&fenc:&enc).']\ ['.&fileformat.']'}  " ステータス行の表示設定
+set statusline=%F%m%=%l,%c\ %p%{'%'}\ %{'['.(&fenc!=''?&fenc:&enc).']\ ['.&fileformat.']'}  " ステータス行の表示設定
 
 " Indent
 set tabstop=4       " ファイル内の<Tab>が対応する空白の数
@@ -70,6 +70,7 @@ augroup vimrc
   autocmd BufNewFile,BufRead *.ctp set filetype=html
   autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype * set formatoptions-=ro   " 改行時にコメントを継続しない
 augroup END
 
 " Search
