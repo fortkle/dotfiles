@@ -1,4 +1,4 @@
-PATH=$HOME/bin:$PATH
+PATH=$HOME/bin:~/.composer/vendor/bin:$PATH
 #PATH=/usr/local/bin:$HOME/bin:$PATH
 export PATH
 
