@@ -27,6 +27,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'scrooloose/syntastic.git'
   NeoBundle 'PDV--phpDocumentor-for-Vim'
   NeoBundle 'junegunn/vim-easy-align'
+  NeoBundle 'tpope/vim-surround'
+  NeoBundle 'rhysd/clever-f.vim'
+  NeoBundle 'pangloss/vim-javascript'
+  NeoBundle 'othree/javascript-libraries-syntax.vim'
+  NeoBundle 'othree/yajs.vim'
+  NeoBundle 'isRuslan/vim-es6'
+  NeoBundle 'hail2u/vim-css3-syntax'
+  NeoBundle 'lilydjwg/colorizer'
   NeoBundle 'chriskempson/vim-tomorrow-theme'
 call neobundle#end()
 filetype plugin indent on " Neobundleの読み込み後に実行
