@@ -1,0 +1,12 @@
+{
+    "extends": "eslint:recommended",
+    "globals": {
+        "App": true,
+        "_": true,
+        "Backbone": true
+    },
+    "env": {
+        "browser": true,
+        "jquery": true
+    }
+}

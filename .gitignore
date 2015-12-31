@@ -14,3 +14,4 @@
 !/.gitignore
 !/setup.sh
 !/.config*
+!/.eslintrc

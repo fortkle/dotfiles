@@ -101,6 +101,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args='--standard=psr2'
+let g:syntastic_javascript_checkers=['eslint']
 nnoremap <Esc>s :SyntasticToggleMode<CR>
 
 " phpDocumentor
