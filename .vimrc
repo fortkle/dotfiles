@@ -78,6 +78,7 @@ augroup vimrc
   autocmd BufNewFile,BufRead *.ctp set filetype=html
   autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype * set formatoptions-=ro   " 改行時にコメントを継続しない
 augroup END
 
