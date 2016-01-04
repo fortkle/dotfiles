@@ -35,6 +35,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'isRuslan/vim-es6'
   NeoBundle 'hail2u/vim-css3-syntax'
   NeoBundle 'lilydjwg/colorizer'
+  NeoBundle 'wavded/vim-stylus'
   NeoBundle 'chriskempson/vim-tomorrow-theme'
 call neobundle#end()
 filetype plugin indent on " Neobundleの読み込み後に実行
@@ -76,6 +77,7 @@ set expandtab       " 挿入モードで <Tab> を挿入するとき、代わり
 augroup vimrc
   autocmd!
   autocmd BufNewFile,BufRead *.ctp set filetype=html
+  "autocmd BufNewFile,BufRead *.styl set filetype=css
   autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -104,6 +106,8 @@ let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args='--standard=psr2'
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_html_tidy_exec = 'tidy'
+let g:syntastic_css_checkers=['csslint']
+let g:syntastic_stylus_checkers=['stylint']
 nnoremap <Esc>s :SyntasticToggleMode<CR>
 
 " phpDocumentor
