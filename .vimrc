@@ -77,7 +77,6 @@ set expandtab       " 挿入モードで <Tab> を挿入するとき、代わり
 augroup vimrc
   autocmd!
   autocmd BufNewFile,BufRead *.ctp set filetype=html
-  "autocmd BufNewFile,BufRead *.styl set filetype=css
   autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
