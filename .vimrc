@@ -56,7 +56,7 @@ set noswapfile                  " スワップファイルを作成しない
 set nobackup                    " バックアップファイルを作成しない
 
 " View
-colorscheme Tomorrow-Night-Bright   " テーマの指定
+"colorscheme Tomorrow-Night-Bright   " テーマの指定
 set showmatch                       " 閉じ括弧が入力されたとき、対応する開き括弧にわずかの間ジャンプする
 set matchtime=1                     " マッチしている括弧を表示するための時間を0.1秒単位で指定する
 set number                          " 毎行の前に行番号を表示する
