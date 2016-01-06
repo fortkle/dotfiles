@@ -115,4 +115,4 @@ nnoremap <C-c> :call PhpDocSingle()<CR>
 vnoremap <C-c> :call PhpDocRange()<CR>
 
 " vim-easy-align
-vnoremap <Enter> <Plug>(EasyAlign)
+vmap <Enter> <Plug>(EasyAlign)
