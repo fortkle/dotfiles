@@ -4,6 +4,7 @@ export PATH
 
 # エイリアス
 alias ll='ls -laG'
+alias gd='git branch --merged | grep -vE "^\*|master$|develop$" | xargs -I % git branch -d %'
 
 # 日本語が文字化けしないよう文字コードを指定
 export LANG=ja_JP.UTF-8
