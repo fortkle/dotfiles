@@ -81,7 +81,7 @@ augroup vimrc
   autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd FileType go setlocal noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd FileType go setlocal noexpandtab tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype * set formatoptions-=ro   " 改行時にコメントを継続しない
 augroup END
 
@@ -123,3 +123,4 @@ vmap <Enter> <Plug>(EasyAlign)
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_fmt_fail_silently = 1
