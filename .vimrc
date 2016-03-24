@@ -55,6 +55,7 @@ set ttyfast                     " 高速ターミナル接続を行う(スクロ
 set scrolloff=10                " 編集中の箇所の周辺のテキストを見ることができる(スクロールする時に下が見える)
 set noswapfile                  " スワップファイルを作成しない
 set nobackup                    " バックアップファイルを作成しない
+set nofixeol                    " 最後に改行のないファイルを編集しても改行を付け加えない "
 
 " View
 "colorscheme Tomorrow-Night-Bright   " テーマの指定
