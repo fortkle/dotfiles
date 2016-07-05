@@ -16,3 +16,4 @@
 !/.config*
 !/.eslintrc
 !/.stylintrc
+!/.git_commit_template
