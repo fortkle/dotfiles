@@ -7,7 +7,6 @@
 brew install ag
 brew install fontforge
 brew install git
-brew install homebrew/php/composer
 brew install mercurial
 brew install nkf
 brew install peco
