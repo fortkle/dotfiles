@@ -1,0 +1,8 @@
+[user]
+	name = fortkle
+	email = fortkle@gmail.com
+[alias]
+	st = status
+	ch = checkout
+	br = branch
+	fe = fetch --prune

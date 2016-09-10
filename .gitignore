@@ -10,6 +10,7 @@
 !/.vimrc
 !/.tmux.conf
 !/.gitignore
+!/.gitconfig
 !/osx_setup.sh
 !/.config*
 !/.eslintrc
