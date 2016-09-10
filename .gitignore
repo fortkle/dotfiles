@@ -12,7 +12,7 @@
 !/.vimrc
 !/.tmux.conf
 !/.gitignore
-!/setup.sh
+!/osx_setup.sh
 !/.config*
 !/.eslintrc
 !/.stylintrc
