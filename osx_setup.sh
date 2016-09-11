@@ -28,6 +28,7 @@ brew install bison
 brew install autoconf
 
 # install software
+brew cask install keycastr
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install firefox
