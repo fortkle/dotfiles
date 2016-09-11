@@ -17,6 +17,15 @@ brew install tree
 brew install vim
 brew install wget
 brew install zsh
+brew install re2c
+brew install openssl
+brew install bison
+brew install libxml2
+brew install libjpeg
+brew install libpng
+brew install libmcrypt
+brew install bison
+brew install autoconf
 
 # install software
 brew cask install dropbox
