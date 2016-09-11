@@ -41,3 +41,4 @@ brew cask install google-japanese-ime
 brew cask install skitch
 brew cask install bartender
 brew cask install keepassx
+brew cask install phpstorm
