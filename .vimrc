@@ -75,6 +75,7 @@ set autoindent      " 新しい行を開始したとき新しい行のインデ�
 set shiftwidth=4    " (自動)インデントの各段階に使われる空白の数
 set smartindent     " 新しい行を作ったときに高度な自動インデントを行う(ex. '{'で終わる行で新しい行を作った時は改行)
 set expandtab       " 挿入モードで <Tab> を挿入するとき、代わりに適切な数の空白を使う
+set breakindent     " 折り返した文章もインデントを有効にする
 
 augroup vimrc
   autocmd!

@@ -2,6 +2,7 @@ export GOPATH=$HOME/Private/go
 PATH=$HOME/bin:~/.composer/vendor/bin:$PATH
 PATH=/usr/local/bin:$HOME/bin:$PATH
 PATH=$GOPATH/bin:$PATH
+PATH=$PATH:./node_modules/.bin
 export PATH
 
 # anyenv
