@@ -26,6 +26,8 @@ brew install libpng
 brew install libmcrypt
 brew install bison
 brew install autoconf
+brew install mcrypt
+brew install php55-mcrypt
 
 # install software
 brew cask install keycastr
