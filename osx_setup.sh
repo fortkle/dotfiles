@@ -47,3 +47,4 @@ brew cask install keepassx
 brew cask install phpstorm
 brew cask install trailer
 brew cask install kindle
+brew cask install appcleaner
