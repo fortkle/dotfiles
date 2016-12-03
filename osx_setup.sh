@@ -48,3 +48,4 @@ brew cask install phpstorm
 brew cask install trailer
 brew cask install kindle
 brew cask install appcleaner
+brew cask install spark
