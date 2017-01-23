@@ -29,7 +29,7 @@ setopt prompt_subst ## PROMPT変数内で変数参照する
 zstyle ':vcs_info:*' formats '[%F{green}%b%f]' # vcsの表示
 zstyle ':vcs_info:*' actionformats '[%F{green}%b%f(%F{red}%a%f)]' # vcsの表示
 precmd() { vcs_info }
-PROMPT='[%n@%m][%~]${vcs_info_msg_0_} $ '
+PROMPT='[%n@%m][%~]${vcs_info_msg_0_}%(?..[%?] ) $ '
 RPROMPT=''
 
 # 入力補完をする
