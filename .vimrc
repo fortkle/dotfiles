@@ -18,13 +18,14 @@ if has('vim_starting')
   endif
 
   set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/ale
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'   " Neobundle自身を管理。その場合はNeoBundleFetch
   NeoBundle 'ctrlpvim/ctrlp.vim'
   NeoBundle 'Townk/vim-autoclose'
-  NeoBundle 'scrooloose/syntastic.git'
+  NeoBundle 'w0rp/ale'
   NeoBundle 'PDV--phpDocumentor-for-Vim'
   NeoBundle 'junegunn/vim-easy-align'
   NeoBundle 'tpope/vim-surround'
@@ -38,6 +39,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'wavded/vim-stylus'
   NeoBundle 'fatih/vim-go'
   NeoBundle 'chriskempson/vim-tomorrow-theme'
+  NeoBundle 'editorconfig/editorconfig-vim'
 call neobundle#end()
 filetype plugin indent on " Neobundleの読み込み後に実行
 NeoBundleCheck " 未インストールのプラグインがあれば通知
@@ -102,17 +104,6 @@ nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 "-------------------------------------------------------------------------------
 " Plugin Settings
 "-------------------------------------------------------------------------------
-" Syntastic
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=2
-let g:syntastic_php_checkers=['phpcs']
-let g:syntastic_php_phpcs_args='--standard=psr2'
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_html_tidy_exec = 'tidy'
-let g:syntastic_css_checkers=['csslint']
-let g:syntastic_stylus_checkers=['stylint']
-nnoremap <Esc>s :SyntasticToggleMode<CR>
-
 " phpDocumentor
 inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-c> :call PhpDocSingle()<CR>
