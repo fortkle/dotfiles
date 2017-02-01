@@ -104,6 +104,11 @@ nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 "-------------------------------------------------------------------------------
 " Plugin Settings
 "-------------------------------------------------------------------------------
+" ale
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0 " don't want linters to run on opening a file
+
 " phpDocumentor
 inoremap <C-c> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-c> :call PhpDocSingle()<CR>
