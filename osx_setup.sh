@@ -28,6 +28,7 @@ brew install bison
 brew install autoconf
 brew install mcrypt
 brew install php55-mcrypt
+brew install yarn
 
 # install software
 brew cask install keycastr
