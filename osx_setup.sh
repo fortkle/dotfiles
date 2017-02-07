@@ -29,6 +29,7 @@ brew install autoconf
 brew install mcrypt
 brew install php55-mcrypt
 brew install yarn
+brew install heroku
 
 # install software
 brew cask install keycastr
