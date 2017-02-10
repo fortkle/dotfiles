@@ -2,8 +2,12 @@
 # 全ファイルを一度無視
 /*
 
-# dotfileも無視 
+# dotfileも無視
 /.*
+
+# config fileも無視
+.config/heroku
+.config/git
 
 # 無視したくないファイルを![filename]で指定
 !/.zshrc
@@ -12,7 +16,8 @@
 !/.gitignore
 !/.gitconfig
 !/osx_setup.sh
-!/.config*
+!/.config/peco/config.json
 !/.eslintrc
 !/.stylintrc
 !/.git_commit_template
+!/.editorconfig
