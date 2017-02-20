@@ -31,6 +31,7 @@ brew install php55-mcrypt
 brew install yarn
 brew install heroku
 brew install watchman
+brew install php55-xdebug
 
 # install software
 brew cask install keycastr
