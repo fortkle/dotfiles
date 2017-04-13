@@ -54,4 +54,3 @@ brew cask install trailer
 brew cask install kindle
 brew cask install appcleaner
 brew cask install spark
-brew cask install vagrant-manager
