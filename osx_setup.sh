@@ -33,6 +33,7 @@ brew install heroku
 brew install watchman
 brew install php55-xdebug
 brew install jq
+brew install mysql
 
 # install software
 brew cask install keycastr
