@@ -34,6 +34,7 @@ brew install watchman
 brew install php55-xdebug
 brew install jq
 brew install mysql
+brew install awscli
 
 # install software
 brew cask install keycastr
