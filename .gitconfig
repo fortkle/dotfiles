@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	excludesfile = /Users/fortkle/.gitignore_global
 [user]
 	name = fortkle
 	email = fortkle@gmail.com

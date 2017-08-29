@@ -8,6 +8,7 @@
 # config fileも無視
 .config/heroku
 .config/git
+.config/configstore
 
 # 無視したくないファイルを![filename]で指定
 !/.zshrc
@@ -21,3 +22,4 @@
 !/.stylintrc
 !/.git_commit_template
 !/.editorconfig
+!/.gitignore_global
