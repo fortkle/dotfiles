@@ -36,6 +36,7 @@ brew install jq
 brew install mysql
 brew install awscli
 brew install awsebcli
+brew install terraform
 
 # install software
 brew cask install keycastr
