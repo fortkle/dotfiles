@@ -38,6 +38,7 @@ brew install awscli
 brew install awsebcli
 brew install terraform
 brew install gnu-sed
+brew install hub
 
 # install software
 brew cask install keycastr
