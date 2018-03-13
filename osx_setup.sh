@@ -37,6 +37,7 @@ brew install mysql
 brew install awscli
 brew install awsebcli
 brew install terraform
+brew install gnu-sed
 
 # install software
 brew cask install keycastr
