@@ -62,3 +62,4 @@ brew cask install appcleaner
 brew cask install spark
 brew cask install istat-menus
 brew cask install paw
+brew cask install ngrok
