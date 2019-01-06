@@ -49,7 +49,6 @@ brew install heroku/brew/heroku
 brew cask install google-japanese-ime
 brew cask install google-chrome
 brew cask install firefox
-brew cask install dropbox
 brew cask install hyperswitch
 brew cask install skitch
 brew cask install kindle
@@ -88,9 +87,3 @@ mas install 414855915
 mas install 975937182
 # Bear
 mas install 1091189122
-# Pages
-mas install 409201541
-# Numbers
-mas install 409203825
-# Keynote
-mas install 409183694
