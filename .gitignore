@@ -5,21 +5,17 @@
 # dotfileも無視
 /.*
 
-# config fileも無視
-.config/heroku
-.config/git
-.config/configstore
-
 # 無視したくないファイルを![filename]で指定
+!/osx_setup.sh
+!/osx_backup.sh
+!/install.sh
+!/install-brew.sh
 !/.zshrc
 !/.vimrc
 !/.tmux.conf
 !/.gitignore
 !/.gitconfig
-!/osx_setup.sh
-!/.config/peco/config.json
 !/.eslintrc
-!/.stylintrc
 !/.git_commit_template
 !/.editorconfig
 !/.gitignore_global
