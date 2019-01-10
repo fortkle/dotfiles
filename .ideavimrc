@@ -1,0 +1,3 @@
+inoremap <c-]> <esc>
+set hlsearch
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>

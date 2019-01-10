@@ -12,6 +12,7 @@
 !/install-brew.sh
 !/.zshrc
 !/.vimrc
+!/.ideavimrc
 !/.tmux.conf
 !/.gitignore
 !/.gitconfig
