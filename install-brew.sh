@@ -67,6 +67,7 @@ brew cask install tableau
 brew cask install typora
 brew cask install imageoptim
 brew cask install ngrok
+brew cask install avast-security
 
 # install software from MacAppStore
 # Slack
