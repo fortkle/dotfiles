@@ -55,7 +55,6 @@ brew cask install kindle
 brew cask install appcleaner
 brew cask install keepassx
 brew cask install karabiner-elements
-brew cask install sequel-pro
 brew cask install bartender
 brew cask install vagrant
 brew cask install docker
@@ -68,6 +67,8 @@ brew cask install typora
 brew cask install imageoptim
 brew cask install ngrok
 brew cask install avast-security
+brew cask install visual-studio-code
+brew cask install mysqlworkbench
 
 # install software from MacAppStore
 # Slack
