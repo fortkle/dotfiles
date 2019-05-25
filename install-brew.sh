@@ -49,6 +49,7 @@ brew install heroku/brew/heroku
 brew cask install google-japanese-ime
 brew cask install google-chrome
 brew cask install firefox
+brew cask install vivaldi
 brew cask install hyperswitch
 brew cask install skitch
 brew cask install kindle
