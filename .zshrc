@@ -78,7 +78,7 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 ## golang
-export GOPATH=$HOME/Private/go
+export GOPATH=$HOME/.go
 
 # PATH setting
 PATH=$PATH:/usr/local/bin

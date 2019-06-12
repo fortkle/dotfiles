@@ -29,6 +29,9 @@ brew install tmux
 # node
 brew install yarn
 
+# go
+brew install go
+
 # infra
 brew install awscli
 brew install awsebcli
