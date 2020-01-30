@@ -16,6 +16,12 @@ brew install vim
 ## MacAppStore
 brew install mas
 
+# phpenv(anyenv)
+brew install bison
+brew install re2c
+brew install libxml2
+brew install libzip
+
 # git
 brew install git
 brew install hub
@@ -62,17 +68,17 @@ brew cask install karabiner-elements
 brew cask install bartender
 brew cask install vagrant
 brew cask install docker
-brew cask install phpstorm
 brew cask install paw
 brew cask install cursorsense
 brew cask install kap
 brew cask install tableau
-brew cask install typora
 brew cask install imageoptim
 brew cask install ngrok
 brew cask install avast-security
 brew cask install visual-studio-code
 brew cask install mysqlworkbench
+brew cask install spotify
+brew cask install jetbrains-toolbox
 
 # install software from MacAppStore
 # Slack
