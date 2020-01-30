@@ -81,10 +81,12 @@ bindkey '^r' peco-select-history
 export GOPATH=$HOME/.go
 
 # PATH setting
+PATH=/usr/local/opt/bison/bin:$PATH #php7.3のビルドに必要
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:~/.composer/vendor/bin
 PATH=$PATH:./node_modules/.bin
 PATH=$PATH:/usr/local/opt/mysql@5.6/bin
+PATH=$PATH:/usr/local/opt/terraform@0.11/bin
 export PATH
