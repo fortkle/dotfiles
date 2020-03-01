@@ -66,12 +66,10 @@ brew cask install appcleaner
 brew cask install keepassx
 brew cask install karabiner-elements
 brew cask install bartender
-brew cask install vagrant
 brew cask install docker
 brew cask install paw
 brew cask install cursorsense
 brew cask install kap
-brew cask install tableau
 brew cask install imageoptim
 brew cask install ngrok
 brew cask install avast-security
@@ -90,8 +88,6 @@ mas install 1024640650
 mas install 445189367
 # BetterSnapTool
 mas install 417375580
-# Todoist
-mas install 585829637
 # The Unarchiver
 mas install 425424353
 # Win Archiver Lite
