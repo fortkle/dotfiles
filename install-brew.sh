@@ -79,6 +79,7 @@ brew cask install visual-studio-code
 brew cask install mysqlworkbench
 brew cask install spotify
 brew cask install jetbrains-toolbox
+brew cask install notion
 
 # install software from MacAppStore
 # Slack
