@@ -72,7 +72,6 @@ brew cask install cursorsense
 brew cask install kap
 brew cask install imageoptim
 brew cask install ngrok
-brew cask install avast-security
 brew cask install visual-studio-code
 brew cask install mysqlworkbench
 brew cask install spotify
