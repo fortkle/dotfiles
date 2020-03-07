@@ -93,5 +93,3 @@ mas install 425424353
 mas install 414855915
 # Fantastical2
 mas install 975937182
-# Bear
-mas install 1091189122
