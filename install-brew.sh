@@ -27,6 +27,7 @@ brew install git
 brew install hub
 brew install tig
 brew install ghq
+brew install gibo
 
 # terminal UI
 brew install peco
