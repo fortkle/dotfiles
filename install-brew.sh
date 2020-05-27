@@ -26,6 +26,7 @@ brew install bzip2
 brew install curl
 brew install libiconv
 brew install libedit
+brew install tidy-html5
 
 # git
 brew install git
