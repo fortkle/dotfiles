@@ -24,6 +24,7 @@ brew install libzip
 brew install zlib
 brew install bzip2
 brew install curl
+brew install libiconv
 
 # git
 brew install git
