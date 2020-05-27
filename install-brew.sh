@@ -22,6 +22,7 @@ brew install re2c
 brew install libxml2
 brew install libzip
 brew install zlib
+brew install bzip2
 
 # git
 brew install git
