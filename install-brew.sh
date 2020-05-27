@@ -23,6 +23,7 @@ brew install libxml2
 brew install libzip
 brew install zlib
 brew install bzip2
+brew install curl
 
 # git
 brew install git
