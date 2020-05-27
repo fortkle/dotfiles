@@ -21,6 +21,7 @@ brew install bison
 brew install re2c
 brew install libxml2
 brew install libzip
+brew install zlib
 
 # git
 brew install git
