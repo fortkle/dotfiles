@@ -27,6 +27,7 @@ brew install curl
 brew install libiconv
 brew install libedit
 brew install tidy-html5
+brew install autoconf
 
 # git
 brew install git
