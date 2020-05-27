@@ -17,17 +17,17 @@ brew install vim
 brew install mas
 
 # phpenv(anyenv)
+brew install autoconf
 brew install bison
-brew install re2c
-brew install libxml2
-brew install libzip
-brew install zlib
 brew install bzip2
 brew install curl
-brew install libiconv
 brew install libedit
+brew install libiconv
+brew install libxml2
+brew install libzip
+brew install re2c
 brew install tidy-html5
-brew install autoconf
+brew install zlib
 
 # git
 brew install git
