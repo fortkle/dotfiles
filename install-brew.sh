@@ -47,7 +47,7 @@ brew install yarn
 brew install go
 
 # infra
-brew install awscli
+brew install awscli@1
 brew install awsebcli
 brew install terraform
 brew install jq
@@ -77,7 +77,6 @@ brew cask install bartender
 brew cask install docker
 brew cask install paw
 brew cask install cursorsense
-brew cask install kap
 brew cask install imageoptim
 brew cask install ngrok
 brew cask install visual-studio-code
@@ -99,5 +98,3 @@ mas install 417375580
 mas install 425424353
 # Win Archiver Lite
 mas install 414855915
-# Fantastical2
-mas install 975937182
