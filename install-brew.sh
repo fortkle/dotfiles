@@ -84,6 +84,7 @@ brew cask install mysqlworkbench
 brew cask install spotify
 brew cask install jetbrains-toolbox
 brew cask install notion
+brew cask install tableplus
 
 # install software from MacAppStore
 # Slack
