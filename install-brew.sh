@@ -63,28 +63,25 @@ brew install imagemagick
 brew install heroku/brew/heroku
 
 # install software
-brew cask install google-japanese-ime
-brew cask install google-chrome
-brew cask install firefox
-brew cask install vivaldi
-brew cask install hyperswitch
-brew cask install skitch
-brew cask install kindle
-brew cask install appcleaner
-brew cask install keepassx
-brew cask install karabiner-elements
-brew cask install bartender
-brew cask install docker
-brew cask install paw
-brew cask install cursorsense
-brew cask install imageoptim
-brew cask install ngrok
-brew cask install visual-studio-code
-brew cask install mysqlworkbench
-brew cask install spotify
-brew cask install jetbrains-toolbox
-brew cask install notion
-brew cask install tableplus
+brew install --cask google-japanese-ime
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask hyperswitch
+brew install --cask skitch
+brew install --cask kindle
+brew install --cask appcleaner
+brew install --cask karabiner-elements
+brew install --cask bartender
+brew install --cask docker
+brew install --cask paw
+brew install --cask cursorsense
+brew install --cask imageoptim
+brew install --cask ngrok
+brew install --cask visual-studio-code
+brew install --cask mysqlworkbench
+brew install --cask jetbrains-toolbox
+brew install --cask notion
+brew install --cask tableplus
 brew install --cask bitwarden
 
 # install software from MacAppStore
