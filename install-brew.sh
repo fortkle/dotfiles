@@ -85,6 +85,7 @@ brew cask install spotify
 brew cask install jetbrains-toolbox
 brew cask install notion
 brew cask install tableplus
+brew install --cask bitwarden
 
 # install software from MacAppStore
 # Slack
