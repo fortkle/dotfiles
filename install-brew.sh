@@ -83,6 +83,7 @@ brew install --cask jetbrains-toolbox
 brew install --cask notion
 brew install --cask tableplus
 brew install --cask bitwarden
+brew install --cask discord
 
 # install software from MacAppStore
 # Slack
