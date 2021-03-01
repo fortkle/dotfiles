@@ -84,6 +84,7 @@ brew install --cask notion
 brew install --cask tableplus
 brew install --cask bitwarden
 brew install --cask discord
+brew install --cask alt-tab
 
 # install software from MacAppStore
 # Slack
