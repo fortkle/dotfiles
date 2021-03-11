@@ -53,7 +53,7 @@ fi
 
 # alias setting
 alias ll='ls -laG'
-alias gd='git branch --merged | grep -vE "^\*|master$|develop$" | xargs -I % git branch -d %'
+alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$" | xargs -I % git branch -d %'
 alias g='cd $(ghq root)/$(ghq list | peco)'
 
 # tool setting
