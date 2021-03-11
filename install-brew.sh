@@ -66,7 +66,6 @@ brew install heroku/brew/heroku
 brew install --cask google-japanese-ime
 brew install --cask google-chrome
 brew install --cask firefox
-brew install --cask hyperswitch
 brew install --cask skitch
 brew install --cask kindle
 brew install --cask appcleaner
