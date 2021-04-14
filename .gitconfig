@@ -9,3 +9,5 @@
 	ch = checkout
 	br = branch
 	fe = fetch --prune
+[pull]
+	rebase = false
