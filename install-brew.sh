@@ -84,6 +84,7 @@ brew install --cask tableplus
 brew install --cask bitwarden
 brew install --cask discord
 brew install --cask alt-tab
+brew install --cask toggl-track
 
 # install software from MacAppStore
 # Slack
