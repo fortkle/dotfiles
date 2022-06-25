@@ -85,6 +85,7 @@ brew install --cask bitwarden
 brew install --cask discord
 brew install --cask noraswitch
 brew install --cask tomighty
+brew install --cask session-manager-plugin
 
 # install software from MacAppStore
 # Slack
