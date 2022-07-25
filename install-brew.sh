@@ -84,8 +84,8 @@ brew install --cask tableplus
 brew install --cask bitwarden
 brew install --cask discord
 brew install --cask noraswitch
-brew install --cask tomighty
 brew install --cask session-manager-plugin
+brew install --cask clockify
 
 # install software from MacAppStore
 # Slack
@@ -100,3 +100,5 @@ mas install 417375580
 mas install 425424353
 # Win Archiver Lite
 mas install 414855915
+# Take A Break, Please
+mas install 843150501
