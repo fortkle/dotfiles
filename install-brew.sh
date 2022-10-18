@@ -86,6 +86,7 @@ brew install --cask discord
 brew install --cask noraswitch
 brew install --cask session-manager-plugin
 brew install --cask clockify
+brew install --cask ledger-live
 
 # install software from MacAppStore
 # Slack
