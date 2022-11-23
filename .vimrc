@@ -14,7 +14,7 @@ if has('vim_starting')
   " Neobundleが未インストールであればgit clone
   if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
     echo "install neobundle..."
-    :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+    :call system("git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
   endif
 
   set runtimepath+=~/.vim/bundle/neobundle.vim/
