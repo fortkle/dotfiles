@@ -2,7 +2,7 @@
 set -eu
 
 # install Homebrew
-which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install commands
 # unix tools
@@ -47,47 +47,23 @@ brew install yarn
 brew install go
 
 # infra
-brew install awscli@1
-brew install awsebcli
-brew install terraform
 brew install jq
 
-# db
-brew install mysql@5.6
-brew install redis
-
-# Connehito
-brew tap Connehito/gdp
-brew install gdp
-brew install imagemagick
-brew install heroku/brew/heroku
-
 # install software
-brew install --cask google-japanese-ime
 brew install --cask google-chrome
-brew install --cask firefox
 brew install --cask skitch
 brew install --cask kindle
 brew install --cask appcleaner
-brew install --cask karabiner-elements
-brew install --cask bartender
 brew install --cask docker
-brew install --cask paw
-brew install --cask cursorsense
-brew install --cask imageoptim
-brew install --cask ngrok
-brew install --cask visual-studio-code
-brew install --cask mysqlworkbench
 brew install --cask jetbrains-toolbox
 brew install --cask notion
-brew install --cask tableplus
 brew install --cask bitwarden
-brew install --cask discord
-brew install --cask noraswitch
-brew install --cask session-manager-plugin
+brew install --cask deepl
 brew install --cask clockify
 brew install --cask ledger-live
-brew install --cask deepl
+brew install --cask karabiner-elements
+brew install --cask cursorsense
+brew install --cask alt-tab
 
 # install software from MacAppStore
 # Slack
@@ -100,7 +76,5 @@ mas install 445189367
 mas install 417375580
 # The Unarchiver
 mas install 425424353
-# Win Archiver Lite
-mas install 414855915
 # Take A Break, Please
 mas install 843150501
