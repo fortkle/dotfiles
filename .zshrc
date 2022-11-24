@@ -80,6 +80,9 @@ bindkey '^r' peco-select-history
 ## golang
 export GOPATH=$HOME/.go
 
+## Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # PATH setting
 PATH=/usr/local/opt/bison/bin:$PATH #php7.3のビルドに必要
 PATH=$PATH:/usr/local/bin
