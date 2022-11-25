@@ -59,11 +59,12 @@ brew install --cask jetbrains-toolbox
 brew install --cask notion
 brew install --cask bitwarden
 brew install --cask deepl
-brew install --cask clockify
 brew install --cask ledger-live
 brew install --cask karabiner-elements
 brew install --cask cursorsense
 brew install --cask alt-tab
+brew install --cask unity-hub
+brew install --cask zoom
 
 # install software from MacAppStore
 # Slack
