@@ -65,6 +65,7 @@ brew install --cask cursorsense
 brew install --cask alt-tab
 brew install --cask unity-hub
 brew install --cask zoom
+brew install --cask ticktick
 
 # install software from MacAppStore
 # Slack
