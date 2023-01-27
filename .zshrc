@@ -57,17 +57,6 @@ alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$" | xargs -I
 alias g='cd $(ghq root)/$(ghq list | peco)'
 
 # tool setting
-## anyenv
-if [ -d $HOME/.anyenv ] ; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-    # for tmux
-    for D in `\ls $HOME/.anyenv/envs`
-    do
-        export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
-    done
-fi
-
 ## peco
 peco-select-history() {
     BUFFER=$(history 1 | sort -k1,1nr | perl -ne 'BEGIN { my @lines = (); } s/^\s*\d+\s*//; $in=$_; if (!(grep {$in eq $_} @lines)) { push(@lines, $in); print $in; }' | peco --query "$LBUFFER")
@@ -77,19 +66,35 @@ peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
-## golang
-export GOPATH=$HOME/.go
-
 ## Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# PATH setting
-PATH=/usr/local/opt/bison/bin:$PATH #php7.3のビルドに必要
+# language setting
+## Node
+PATH=$PATH:./node_modules/.bin
+#PATH=/opt/homebrew/opt/node@18/bin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
+PATH=/opt/homebrew/opt/node@16/bin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
+
+## Go
+export GOPATH=$HOME/.go
+PATH=$PATH:$GOPATH/bin
+
+## PHP
+PATH=$PATH:~/.composer/vendor/bin
+PATH=/opt/homebrew/opt/php@8.2/bin:$PATH
+PATH=/opt/homebrew/opt/php@8.2/sbin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/php@8.2/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include"
+#PATH=/opt/homebrew/opt/php@8.1/bin:$PATH
+#PATH=/opt/homebrew/opt/php@8.1/sbin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/php@8.1/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/php@8.1/include"
+
+# general PATH setting
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/bin
-PATH=$PATH:$GOPATH/bin
-PATH=$PATH:~/.composer/vendor/bin
-PATH=$PATH:./node_modules/.bin
-PATH=$PATH:/usr/local/opt/mysql@5.6/bin
-PATH=$PATH:/usr/local/opt/terraform@0.11/bin
 export PATH
