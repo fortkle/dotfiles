@@ -48,6 +48,7 @@ brew install go
 
 # infra
 brew install jq
+brew install awscli
 
 # install software
 brew install --cask google-chrome
