@@ -72,12 +72,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # language setting
 ## Node
 PATH=$PATH:./node_modules/.bin
-#PATH=/opt/homebrew/opt/node@18/bin:$PATH
-#export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
-#export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
-PATH=/opt/homebrew/opt/node@16/bin:$PATH
-export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
+PATH=/opt/homebrew/opt/node@18/bin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
+#PATH=/opt/homebrew/opt/node@16/bin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
 
 ## Go
 export GOPATH=$HOME/.go

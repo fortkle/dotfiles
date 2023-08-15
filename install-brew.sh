@@ -42,6 +42,7 @@ brew install tmux
 
 # node
 brew install yarn
+brew install corepack
 
 # go
 brew install go

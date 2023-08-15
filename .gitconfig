@@ -11,3 +11,5 @@
 	fe = fetch --prune
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main
