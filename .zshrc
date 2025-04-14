@@ -53,7 +53,7 @@ fi
 
 # alias setting
 alias ll='ls -laG'
-alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$" | xargs -I % git branch -d %'
+alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$|staging$" | xargs -I % git branch -d %'
 alias g='cd $(ghq root)/$(ghq list | peco)'
 
 # tool setting
@@ -72,9 +72,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # language setting
 ## Node
 PATH=$PATH:./node_modules/.bin
-PATH=/opt/homebrew/opt/node@18/bin:$PATH
-export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
+
+PATH=/opt/homebrew/opt/node@20/bin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
+#PATH=/opt/homebrew/opt/node@18/bin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
 #PATH=/opt/homebrew/opt/node@16/bin:$PATH
 #export LDFLAGS="-L/opt/homebrew/opt/node@16/lib"
 #export CPPFLAGS="-I/opt/homebrew/opt/node@16/include"
@@ -98,3 +102,15 @@ export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include"
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/bin
 export PATH
+
+# pnpm
+export PNPM_HOME="/Users/fortkle/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# gcloud
+source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
+source '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'

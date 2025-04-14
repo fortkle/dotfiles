@@ -54,21 +54,22 @@ brew install awscli
 # install software
 brew install --cask google-chrome
 brew install --cask skitch
-brew install --cask kindle
 brew install --cask appcleaner
 brew install --cask docker
 brew install --cask jetbrains-toolbox
 brew install --cask notion
 brew install --cask bitwarden
-brew install --cask deepl
-brew install --cask ledger-live
 brew install --cask karabiner-elements
 brew install --cask cursorsense
 brew install --cask alt-tab
 brew install --cask unity-hub
 brew install --cask zoom
-brew install --cask ticktick
 brew install --cask discord
+brew install --cask notion-calendar
+brew install --cask google-cloud-sdk
+brew install --cask jump-desktop-connect
+brew install --cask notunes
+brew install --cask cursor
 
 # install software from MacAppStore
 # Slack
@@ -83,3 +84,5 @@ mas install 417375580
 mas install 425424353
 # Take A Break, Please
 mas install 843150501
+# Kindle
+mas install 302584613
