@@ -69,20 +69,18 @@ brew install --cask notion-calendar
 brew install --cask google-cloud-sdk
 brew install --cask jump-desktop-connect
 brew install --cask notunes
+brew install --cask visual-studio-code
 brew install --cask cursor
+brew install --cask dia
 
 # install software from MacAppStore
 # Slack
 mas install 803453959
 # CotEditor
 mas install 1024640650
-# PopClip
-mas install 445189367
 # BetterSnapTool
 mas install 417375580
 # The Unarchiver
 mas install 425424353
-# Take A Break, Please
-mas install 843150501
 # Kindle
 mas install 302584613
