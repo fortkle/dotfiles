@@ -56,7 +56,6 @@ brew install --cask google-chrome
 brew install --cask skitch
 brew install --cask appcleaner
 brew install --cask docker
-brew install --cask jetbrains-toolbox
 brew install --cask notion
 brew install --cask bitwarden
 brew install --cask karabiner-elements
@@ -71,7 +70,7 @@ brew install --cask jump-desktop-connect
 brew install --cask notunes
 brew install --cask visual-studio-code
 brew install --cask cursor
-brew install --cask dia
+brew install --cask ghostty
 
 # install software from MacAppStore
 # Slack
