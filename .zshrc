@@ -53,7 +53,10 @@ fi
 
 # alias setting
 alias ll='ls -laG'
-alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$|staging$" | xargs -I % git branch -d %'
+#alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$|staging$" | xargs -I % git branch -d %'
+alias gd-dry="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)\$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged --json number -q '.[0].number' 2>/dev/null | grep -q . && echo \"Would delete: \$branch\"; done"
+alias gd="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)$' | xargs -n1 -I{} sh -c 'gh pr list --head {} --state merged -q \".[0].number\" --json number 2>/dev/null | grep -q . && echo \"Deleting: {}\" && git branch -D {}'"
+
 alias g='cd $(ghq root)/$(ghq list | peco)'
 
 # tool setting
@@ -73,9 +76,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Node
 PATH=$PATH:./node_modules/.bin
 
-PATH=/opt/homebrew/opt/node@20/bin:$PATH
-export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
+#PATH=/opt/homebrew/opt/node@24/bin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/node@24/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/node@24/include"
+PATH=/opt/homebrew/opt/node@22/bin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+#PATH=/opt/homebrew/opt/node@20/bin:$PATH
+#export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
 #PATH=/opt/homebrew/opt/node@18/bin:$PATH
 #export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
 #export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
