@@ -43,6 +43,7 @@ brew install glow
 
 # node
 brew install corepack
+brew install bruno
 
 # go
 brew install go
@@ -70,6 +71,7 @@ brew install --cask notunes
 brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask ghostty
+brew install --cask obsidian
 
 # install software from MacAppStore
 # Slack
