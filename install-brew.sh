@@ -42,7 +42,6 @@ brew install tmux
 brew install glow
 
 # node
-brew install yarn
 brew install corepack
 
 # go
