@@ -84,3 +84,5 @@ mas install 417375580
 mas install 425424353
 # Kindle
 mas install 302584613
+# Tailscale
+mas install 1475387142
