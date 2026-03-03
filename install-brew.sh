@@ -39,6 +39,7 @@ brew install gibo
 # terminal UI
 brew install peco
 brew install tmux
+brew install glow
 
 # node
 brew install yarn

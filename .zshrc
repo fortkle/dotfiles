@@ -53,11 +53,23 @@ fi
 
 # alias setting
 alias ll='ls -laG'
-#alias gd='git branch --merged | grep -vE "^\*|master$|main$|develop$|staging$" | xargs -I % git branch -d %'
 alias gd-dry="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)\$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged --json number -q '.[0].number' 2>/dev/null | grep -q . && echo \"Would delete: \$branch\"; done"
-alias gd="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)$' | xargs -n1 -I{} sh -c 'gh pr list --head {} --state merged -q \".[0].number\" --json number 2>/dev/null | grep -q . && echo \"Deleting: {}\" && git branch -D {}'"
-
+alias gd="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged -q '.[0].number' --json number 2>/dev/null | grep -q . && echo \"Deleting: \$branch\" && git branch -D \"\$branch\"; done"
 alias g='cd $(ghq root)/$(ghq list | peco)'
+
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+tsdev() {
+  local port="${1:-3000}"
+  tailscale serve off 2>/dev/null
+  tailscale serve --bg "http://localhost:${port}"
+  echo "-> https://$(tailscale status --json | jq -r '.Self.DNSName | rtrimstr(".")')/"
+}
+
+tsdevoff() {
+  tailscale serve --bg off
+  echo "-> stop"
+}
 
 # tool setting
 ## peco
@@ -109,6 +121,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include"
 
 # general PATH setting
 PATH=$PATH:/usr/local/bin
+PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/bin
 export PATH
 
