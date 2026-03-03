@@ -53,7 +53,6 @@ brew install awscli
 
 # install software
 brew install --cask google-chrome
-brew install --cask skitch
 brew install --cask appcleaner
 brew install --cask docker
 brew install --cask notion
