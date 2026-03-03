@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-for dir in .ssh .config
+for dir in .ssh .config .claude
 do
   [ -d $HOME/$dir ] && \cp -frp $HOME/$dir $HOME/Dropbox/auto_backups/
 done
