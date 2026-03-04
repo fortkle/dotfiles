@@ -72,6 +72,7 @@ brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask ghostty
 brew install --cask obsidian
+brew install --cask nani
 
 # install software from MacAppStore
 # Slack
