@@ -40,6 +40,7 @@ brew install gibo
 brew install peco
 brew install tmux
 brew install glow
+brew install k1LoW/tap/mo
 
 # node
 brew install corepack
