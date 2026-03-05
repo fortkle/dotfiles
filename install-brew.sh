@@ -74,6 +74,8 @@ brew install --cask cursor
 brew install --cask ghostty
 brew install --cask obsidian
 brew install --cask nani
+brew install --cask claude-code
+brew install --cask claude
 
 # install software from MacAppStore
 # Slack
