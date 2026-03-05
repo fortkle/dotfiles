@@ -60,14 +60,18 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 tsdev() {
-  local port="${1:-3000}"
-  tailscale serve off 2>/dev/null
-  tailscale serve --bg "http://localhost:${port}"
-  echo "-> https://$(tailscale status --json | jq -r '.Self.DNSName | rtrimstr(".")')/"
+  if [ $# -eq 0 ]; then set -- 3000; fi
+  local host="$(tailscale status --json | jq -r '.Self.DNSName | rtrimstr(".")')"
+  for port in "$@"; do
+    tailscale serve --bg --https=${port} "http://localhost:${port}"
+    echo "-> https://${host}:${port}/"
+  done
 }
 
 tsdevoff() {
-  tailscale serve --bg off
+  tailscale serve status --json 2>/dev/null | jq -r '.TCP | keys[]' | while read -r port; do
+    tailscale serve --https=${port} off 2>/dev/null
+  done
   echo "-> stop"
 }
 
