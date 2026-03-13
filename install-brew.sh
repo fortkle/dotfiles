@@ -76,6 +76,7 @@ brew install --cask obsidian
 brew install --cask nani
 brew install --cask claude-code
 brew install --cask claude
+brew install --cask tableplus
 
 # install software from MacAppStore
 # Slack
