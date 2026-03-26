@@ -4,6 +4,9 @@ set -eu
 # install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# install claude
+curl -fsSL https://claude.ai/install.sh | bash
+
 # install commands
 # unix tools
 brew install gnu-sed
@@ -74,7 +77,6 @@ brew install --cask cursor
 brew install --cask ghostty
 brew install --cask obsidian
 brew install --cask nani
-brew install --cask claude-code
 brew install --cask claude
 brew install --cask tableplus
 
