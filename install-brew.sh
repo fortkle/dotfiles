@@ -18,6 +18,7 @@ brew install ag
 # Editor
 brew install vim
 brew install neovim
+brew install fd
 
 ## MacAppStore
 brew install mas
