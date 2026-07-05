@@ -14,7 +14,10 @@ brew install nkf
 brew install wget
 brew install tree
 brew install ag
+
+# Editor
 brew install vim
+brew install neovim
 
 ## MacAppStore
 brew install mas
