@@ -19,6 +19,7 @@ brew install ag
 brew install vim
 brew install neovim
 brew install fd
+brew install ripgrep
 
 ## MacAppStore
 brew install mas
