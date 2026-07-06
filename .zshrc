@@ -55,7 +55,18 @@ fi
 alias ll='ls -laG'
 alias gd-dry="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)\$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged --json number -q '.[0].number' 2>/dev/null | grep -q . && echo \"Would delete: \$branch\"; done"
 alias gd="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged -q '.[0].number' --json number 2>/dev/null | grep -q . && echo \"Deleting: \$branch\" && git branch -D \"\$branch\"; done"
-alias g='cd $(ghq root)/$(ghq list | peco)'
+
+function g() {
+  local root sel
+  root=$(ghq root)
+  sel=$( {
+    ghq list --full-path
+    ghq list --full-path | while read -r r; do
+      git -C "$r" worktree list --porcelain 2>/dev/null | sed -n 's/^worktree //p'
+    done
+  } | awk '!seen[$0]++' | sed "s|^$root/||" | peco )
+  [ -n "$sel" ] && cd "$root/$sel"
+}
 
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
@@ -87,6 +98,9 @@ bindkey '^r' peco-select-history
 
 ## Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## git-wt
+eval "$(git wt --init zsh)"
 
 # language setting
 ## Node
