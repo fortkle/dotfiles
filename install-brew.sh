@@ -43,6 +43,8 @@ brew install hub
 brew install tig
 brew install ghq
 brew install gibo
+brew install k1LoW/tap/git-wt
+brew install k1LoW/tap/roots
 
 # terminal UI
 brew install peco
