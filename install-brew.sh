@@ -75,7 +75,6 @@ brew install --cask alt-tab
 brew install --cask unity-hub
 brew install --cask zoom
 brew install --cask discord
-brew install --cask notion-calendar
 brew install --cask google-cloud-sdk
 brew install --cask jump-desktop-connect
 brew install --cask notunes
@@ -87,6 +86,7 @@ brew install --cask nani
 brew install --cask claude
 brew install --cask tableplus
 brew install --cask hammerspoon
+brew install --cask meetingbar
 
 # install software from MacAppStore
 # Slack
