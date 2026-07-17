@@ -87,6 +87,7 @@ brew install --cask claude
 brew install --cask tableplus
 brew install --cask hammerspoon
 brew install --cask meetingbar
+brew install --cask handy
 
 # install software from MacAppStore
 # Slack
