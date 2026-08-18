@@ -56,6 +56,32 @@ alias ll='ls -laG'
 alias gd-dry="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)\$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged --json number -q '.[0].number' 2>/dev/null | grep -q . && echo \"Would delete: \$branch\"; done"
 alias gd="git branch --format='%(refname:short)' | grep -vE '^(master|main|develop|staging)$' | while IFS= read -r branch; do gh pr list --head \"\$branch\" --state merged -q '.[0].number' --json number 2>/dev/null | grep -q . && echo \"Deleting: \$branch\" && git branch -D \"\$branch\"; done"
 
+# Delete worktrees (and their branches) whose PR has been merged. -n for dry run.
+function gwtd() {
+  local dry_run=""
+  [ "$1" = "-n" ] && dry_run=1
+  local main_wt
+  main_wt=$(git worktree list --porcelain | sed -n '1s/^worktree //p') || return 1
+  git worktree list --porcelain \
+    | awk '/^worktree /{wt=substr($0,10)} /^branch /{b=substr($0,19); print wt "\t" b}' \
+    | while IFS=$'\t' read -r wt branch; do
+      [ "$wt" = "$main_wt" ] && continue
+      case "$branch" in master|main|develop|staging) continue ;; esac
+      gh pr list --head "$branch" --state merged --json number -q '.[0].number' 2>/dev/null | grep -q . || continue
+      if [ -n "$(git -C "$wt" status --porcelain 2>/dev/null)" ]; then
+        echo "Skip (dirty): $branch ($wt)"
+        continue
+      fi
+      if [ -n "$dry_run" ]; then
+        echo "Would delete: $branch ($wt)"
+      else
+        echo "Deleting: $branch ($wt)"
+        git wt -D "$wt"
+      fi
+    done
+}
+alias gwtd-dry='gwtd -n'
+
 function g() {
   local root sel
   root=$(ghq root)

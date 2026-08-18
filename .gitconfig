@@ -19,5 +19,7 @@
 	process = git-lfs filter-process
 	required = true
 [wt]
-	basedir = .git/wt
+	basedir = .wt
 	copyignored = true
+	nocopy = node_modules/
+	nocopy = *.tsbuildinfo
