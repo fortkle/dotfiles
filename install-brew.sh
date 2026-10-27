@@ -68,7 +68,8 @@ brew install --cask google-chrome
 brew install --cask appcleaner
 brew install --cask docker
 brew install --cask notion
-brew install --cask bitwarden
+brew install --cask 1password
+brew install --cask 1password-cli
 brew install --cask karabiner-elements
 brew install --cask cursorsense
 brew install --cask alt-tab
